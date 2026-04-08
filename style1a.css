@@ -390,9 +390,9 @@ margin: 0 auto;
 .trust-container {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0 1.5rem;                    /* Safe side margins */
+  padding: 0 1rem;                    /* Safe side margins */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);   /* 4 columns by default */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));   /* Better responsive behavior */
   gap: 1.2rem;
 }
 
@@ -423,6 +423,17 @@ margin: 0 auto;
     font-size: 0.82rem;
   }
 }
+
+
+
+/* Make it tighter on very small screens */
+@media (max-width: 480px) {
+  .trust-container {
+    padding: 0 0.8rem;
+    gap: 0.8rem;
+  }
+}
+
 
 /* Very small phones - make numbers even smaller if needed */
 @media (max-width: 380px) {
