@@ -1,5 +1,479 @@
-<!-- COUNTER TEMPORARILY DISABLED - UNCOMMENT LATER -->
-<!--
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Saas Homepage</title>
+    <link rel="stylesheet" type="text/css" href="style1a.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+    <body>
+
+      <div class="site-header">
+        <div class="header-left">
+          <!-- LOGO -->
+          <a href="#" class="logo">
+            <img src="logo.png" alt="Logo">
+          </a>
+        </div>
+
+
+        <div class="header-center">
+          <!-- SEARCH BAR -->
+          <div class="search-bar">
+            <form action="under.html" method="GET">
+              <button type="submit" class="search-icon-btn">
+                <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24">
+                <circle cx="10" cy="10" r="7" stroke="#333" stroke-width="2" fill="none"/>
+                <line x1="15" y1="15" x2="22" y2="22" stroke="#333" stroke-width="2"/>
+                </svg>
+              </button>
+
+            <input type="text" id="searchInput" name="q" placeholder="Search tasks...">
+            </form>
+          </div>
+        </div>
+
+
+
+        <div class="header-right">
+            <ul class="nav-links">
+              <li><a class="active">Home</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+
+        <!-- Hamburger for mobile -->
+            <div id="icon-toggle" class="hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+
+
+            <!-- Mobile dropdown -->
+            <ul class="mobile-nav-links">
+              <li><a class="active">Home</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Log In</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+<!-- NEW: Main Container, to ensure that left and right side margins are consistent! -->
+  <div class="main-container">
+
+
+
+        <!-- HERO / UNLEASH SECTION -->
+            <section class="hero">
+              <div class="hero-grid">
+                
+                <!-- LEFT: TEXT -->
+                <div class="hero-text">
+                  <h1>Unleash Your Team’s Full Potential</h1>
+                  <p class="hero-subtitle">
+                    Streamline workflows, gain actionable insights,
+                    and foster seamless collaboration with the ultimate platform
+                    <span class="mobile-break"> for modern businesses.
+                  </p>
+                  <p class="hero-empower">Empower your team <span class="mobile-break"> to achieve more, faster!</p>
+                  <button class="cta-btn">Get Started</button>
+                </div>
+
+                <!-- RIGHT: IMAGE -->
+                <div class="hero-image">
+                  <img src="team-office.jpg" alt="Team collaboration meeting with charts and graphs">
+                </div>
+              </div>
+            </section>
+
+
+
+
+
+<!-- TRUST / STATS BAR -->
+<section class="trust-bar">
+  <div class="trust-container">
+    <div class="stat-item">
+      <h3 data-count="10000">0<span class="suffix">K+</span></h3>
+      <p>Active Teams</p>
+    </div>
+    <div class="stat-item">
+      <h3 data-count="98">0</h3>
+      <p>Retention Rate</p>
+    </div>
+    <div class="stat-item">
+      <h3 data-count="4.9">0</h3>
+      <p>From 2,300+ reviews</p>
+    </div>
+    <div class="stat-item">
+      <h3 data-count="24">0</h3>
+      <p>Enterprise Support</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+          <!-- KEY FEATURES SECTION -->
+        <section class="key-features">
+
+            <div class="features-header">
+              <span class="section-badge">Key Features</span>
+                <h2>Enhance Your Productivity!</h2>
+                <p>Discover a seamless way to manage your projects efficiently and effectively with our intuitive dashboard.</p>
+            </div>
+
+            <div class="features-grid">
+
+            <!-- Card 1 -->
+            <div class="feature-card" data-flip-card>
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="icon-circle">
+                    <img src="secure.svg" alt="Secure Data">
+                  </div>
+                    <h3>Secure Data</h3>
+                    <p>Ensure your information is protected with advanced encryption and robust security protocols.</p>
+                </div>
+
+                <div class="card-back">
+                  <h3>Enterprise Grade Security</h3>
+                  <p>End-to-end encryption, SOC 2 Type II certified, GDPR compliant, and regular third-party audits.</p>
+                  <button class="flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card" data-flip-card>
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="icon-circle">
+                    <img src="analytics.svg" alt="Analytics">
+                  </div>
+                  <h3>Real Time Analytics</h3>
+                  <p>Gain instant insights into your performance with dynamic and customizable dashboards.</p>
+                </div>
+                <div class="card-back">
+                  <h3>Powerful Insights</h3>
+                  <p>Live dashboards, custom reports, AI-powered trends, and exportable data in multiple formats.</p>
+                  <button class="flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card" data-flip-card>
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="icon-circle">
+                    <img src="payment.svg" alt="Payments">
+                  </div>
+                  <h3>Effortless Payments</h3>
+                  <p>Streamline billing and subscriptions with our integrated and secure gateway.</p>
+                </div>
+                <div class="card-back">
+                  <h3>Seamless Billing</h3>
+                  <p>Support for credit cards, PayPal, bank transfers, and automated recurring invoices.</p>
+                  <button class="flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="feature-card" data-flip-card>
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="icon-circle">
+                    <img src="infrastructure.svg" alt="Infrastructure">
+                  </div>
+                  <h3>Scalable Infrastructure</h3>
+                  <p>Grow your business without limits and high-performance cloud platform.</p>
+                </div>
+                <div class="card-back">
+                  <h3>Built to Scale</h3>
+                  <p>Auto-scaling infrastructure, 99.99% uptime SLA, and global CDN support.</p>
+                  <button class="flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="feature-card" data-flip-card>
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="icon-circle">
+                    <img src="messaging.svg" alt="Messaging">
+                  </div>
+                  <h3>Integrated Messaging</h3>
+                  <p>Communicate seamlessly with your team and your clients directly within the platform.</p>
+                </div>
+                <div class="card-back">
+                  <h3>Team Communication</h3>
+                  <p>In-app chat, threaded discussions, file sharing, and real-time notifications.</p>
+                  <button class="flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="feature-card" data-flip-card>
+              <div class="card-inner">
+                <div class="card-front">
+                  <div class="icon-circle">
+                    <img src="team.svg" alt="Team">
+                  </div>
+                  <h3>Team Collaboration</h3>
+                  <p>Empower your team with tools designed for efficient teamwork and shared progress.</p>
+                </div>
+                <div class="card-back">
+                  <h3>Work Together Better</h3>
+                  <p>Shared workspaces, task assignment, real-time editing, and progress tracking.</p>
+                  <button class="flip-back-btn">Back</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+
+
+
+
+          <!-- TESTIMONIAL SECTION -->
+          <section class="testimonial">
+            <div class="testimonial-container">
+              <div class="quote-wrapper">
+                <p class="quote-text">
+                “SaaS Dashboard has revolutionised the way we manage our projects. The intuitive interface and powerful features have boosted our team’s productivity significantly. It’s an indispensable tool for your daily operations.”</p>
+
+                <div class="author">
+                  <img src="janedoepic.png" alt="Jane Doe">
+                  <div class="author-info">
+                   <h4>Jane Doe</h4>
+                   <p>CEO, Great Solutions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+
+
+          <!-- FOOTER SECTION -->
+
+        <footer class="footer">
+          <div class="footer-container">
+            <!-- Left: Links -->
+            <div class="footer-links">
+              <a href="#">Company</a>
+              <a href="#">Resources</a>
+              <a href="#">Policy</a>
+              <a href="#">Careers</a>
+            </div>
+
+            <!-- Right: Social Icons (simple version) -->
+            <div class="social-icons">
+              <a href="#" aria-label="Twitter" class="social-link"><img src="X-logo.svg"></a>
+              <a href="#" aria-label="Facebook" class="social-link"><img src="facebook.svg"></a>
+              <a href="#" aria-label="LinkedIn" class="social-link"><img src="linkedin.svg"></a>
+            </div>
+          </div>
+        </footer>
+  </div>
+
+
+        <!-- Back to Top Button -->
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+          ↑
+        </button>
+
+
+
+
+
+
+
+
+
+            <script>
+            // Feature Card Flip Effect
+            document.querySelectorAll('.feature-card').forEach(card => {
+              card.addEventListener('click', function(e) {
+                // Don't flip if clicking the "Back" button
+                if (e.target.closest('.flip-back-btn')) {
+                  this.dataset.flipped = 'false';
+                  return;
+                }
+
+                const isFlipped = this.dataset.flipped === 'true';
+                this.dataset.flipped = isFlipped ? 'false' : 'true';
+              });
+            });
+            </script>
+
+
+
+
+
+
+
+
+
+        <script>
+        // Back to Top Button
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+          if (window.scrollY > 1000) {
+            backToTop.classList.add('show');
+          } else {
+            backToTop.classList.remove('show');
+          }
+        });
+
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+        </script>
+
+
+
+
+
+    
+
+        <script>
+          // JavaScript: toggle menu and "X"
+          const iconToggle = document.getElementById('icon-toggle');
+          const mobileNav = document.querySelector('.mobile-nav-links');
+
+          // Simple Hamburger Toggle
+          iconToggle.addEventListener('click', () => {
+            iconToggle.classList.toggle('active');
+            mobileNav.style.display = mobileNav.style.display === 'flex' ? 'none' : 'flex';
+          });
+
+          // Close menu if click outside
+          document.addEventListener('click', (e) => {
+            if (!iconToggle.contains(e.target) && !mobileNav.contains(e.target)) {
+              iconToggle.classList.remove('active');
+              mobileNav.style.display = 'none';
+            }
+          });
+
+          // Close menu with ESC key
+          document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+              iconToggle.classList.remove('active');
+              mobileNav.style.display = 'none';
+            }
+          });
+        </script>
+
+
+
+
+
+        <script>
+        // Auto-close mobile menu when resizing back to desktop
+        window.addEventListener('resize', () => {
+          if (window.innerWidth > 897) {
+            const iconToggle = document.getElementById('icon-toggle');
+            const mobileNav = document.querySelector('.mobile-nav-links');
+            
+            if (iconToggle && mobileNav) {
+              iconToggle.classList.remove('active');
+              mobileNav.style.display = 'none';
+            }
+          }
+        });
+        </script>
+
+
+
+
+
+
+
+
+
+
+        <script>
+        const searchBtn = document.querySelector('.search-icon-btn');
+        const searchInput = document.getElementById('searchInput'); // <--- this was missing
+
+        // disable/enable button based on input
+        searchInput.addEventListener('input', () => {
+          searchBtn.disabled = searchInput.value.trim() === "";
+        });
+
+        // initialize on page load
+        searchBtn.disabled = searchInput.value.trim() === "";
+        </script>
+
+
+        <script>
+          window.addEventListener('scroll', () => {
+            document.querySelector('.site-header').classList.toggle('scrolled', window.scrollY > 50);
+          });
+        </script>
+
+
+
+
+
+
+        <script>
+                window.addEventListener('scroll', () => {
+          document.querySelector('.site-header').classList.toggle('scrolled', window.scrollY > 50);
+        });
+        </script>
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js">
+        </script>
+
+
+
+
+        <script>
+          AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+          });
+        </script>
+
+
+
+
+
 <script>
 // Clean Counter - Shows perfect "10K+" 
 document.addEventListener('DOMContentLoaded', () => {
@@ -85,4 +559,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 </script>
--->
+
+
+
+
+
+
+        <script>
+          /* TOGGLE DEBUG MODE WITH "D" KEY */
+          document.addEventListener("keydown", (e) => {
+            if (e.key.toLowerCase() === "d") {
+              document.body.classList.toggle("debug");
+            }
+          });
+        </script>
+
+
+
+
+    </body>
+  </html>  
