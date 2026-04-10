@@ -366,6 +366,7 @@ margin: 0 auto;
   transition: 0.4s ease;
 }
 
+
 /* Hero image */
 .hero-image img {
   width: 100%;
@@ -441,6 +442,32 @@ margin: 0 auto;
     font-size: 1.25rem;
   }
 }
+
+
+
+
+/* ===== ONLY THESE TWO PARAGRAPHS ON SMALL MOBILE SCREENS ===== */
+@media (max-width: 424px) {
+
+  .hero-subtitle,
+  .hero-empower {
+    text-wrap: balance;        /* Makes lines more even and natural */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    text-wrap: balance;     /* makes the lines look more even */
+  }
+}
+
+/* ===== MOBILE-ONLY TEXT BREAKS (iPhone 11 and smaller) ===== */
+@media (max-width: 424px) {
+  .mobile-break {
+    display: block;   /* This forces the exact line break you want on small screens only */
+  }
+}
+
+
+
 
 .stat-item {
   background: rgba(255, 255, 255, 0.03);
@@ -931,7 +958,7 @@ margin: 0 auto;
   
   .cta-btn {
     width: 100%;
-    max-width: 280px;
+    max-width: 170px;
     margin: 0 auto;
   }
 }
