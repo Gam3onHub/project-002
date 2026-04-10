@@ -507,6 +507,14 @@ margin: 0 auto;
 }
 
 
+.stat-item h3 .suffix {
+  font-size: 0.68em;
+  vertical-align: super;
+  margin-left: 3px;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
 
 
 
